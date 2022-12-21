@@ -1,0 +1,131 @@
+<html>
+<head>
+	<title>Haza64</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+<link rel="manifest" href="../icons/site.webmanifest">
+<link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-config" content="../icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Haza64">
+	<meta property="og:title" content="Haza64" />
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
+	<script src="https://kit.fontawesome.com/dc173aaea3.js" crossorigin="anonymous"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="../js/title.js"></script>
+	<script src="../js/misc.js"></script>
+	<script src="../js/alerts/alertify.js"></script>
+</head>
+<script type="text/javascript">
+	function play()
+{
+}
+</script>
+<style>
+	.enter {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		border: 0px solid black;
+		font-size: 20px;
+		color: white;
+		font-weight: 200;
+		font-family: "Roboto", sans-serif;
+		overflow: hidden;
+		background-color: #171b1f;
+		transition: 0.3s;
+		text-align: center;
+
+	}
+	.enter:hover {
+		background-color: #757575;
+	}
+	body {
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+         user-select: none; 
+color: white;
+overflow:auto;
+background-color: #171b1f;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+
+margin-top: 15vh;
+
+}
+    .zoom {
+      transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+    }
+    
+    .zoom:hover {
+      transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.curved-zoom {
+		transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+	  margin: 10px; 
+	  border-radius: 15px; 
+	}
+	.curved-zoom:hover {
+      transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.icon-zoom {
+		transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+	  margin: 10px; 
+	}
+	.icon-zoom:hover {
+      transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.curved-icon {
+	margin: 10px; border-radius: 15px; pointer-events: none;
+	}
+
+	.icon {
+	margin: 10px; pointer-events: none;
+	}
+    </style>
+</head>
+<div class="topnav">
+	<a href="../">Home</a>
+	<a class="active" href="about">About</a>
+	<a href="../art">Art</a>
+	<a href="../donate">Donate</a>
+</div>
+<body onload="play()">
+	<div id="soundtrack"></div>
+	<div class="container mt-3 text-center" style="overflow:hidden;	padding-bottom:40px;	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+		<h1 class="lo" , style="font-weight:400;padding-top:40px"class="featurette-heading">About</h1>
+		<br>
+		<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/735811f5-1a88-4640-8601-eec54dcff9cf-profile_image-600x600.png" class="zoom" width="120" height="auto" style="border-radius:20px">
+		<h3 style="padding-top:10px"></h3>
+		<h3 style="text-align:center;font-size:20px">Im Haza, or Dan. He/Him.</h3>
+		<h3 style="padding-top:10px"></h3>
+		<h3 style="text-align:center;font-size:20px">Team Fox Bois</h3>
+		<h3 style="padding-top:10px"></h3>
+		<h3 style="text-align:center;font-size:20px">I stream on Twitch as an affiliate, I get too many donations and love my viewers.</h3>
+		<h3 style="text-align:center;font-size:20px">Stream 3-4 times a week around 9PM ET. Chill vibes only :)</h3>
+		<h3 style="padding-top:10px"></h3>
+	</div>
+	<h3 style="padding-bottom:5px"></h3>
+	<h3 style="text-align:center;font-size:10px">Maintained and created by <a href="https://github.com/SSSEAL-C" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">SSSEAL-C</a></h3>
+</body>
+</html>

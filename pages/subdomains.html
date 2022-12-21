@@ -1,0 +1,435 @@
+<html>
+<head>
+	<title>Geoguesser Cheats</title>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5556515162447894"
+     crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/site.webmanifest">
+<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-config" content="icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Geoguesser Cheats">
+	<meta property="og:title" content="Geoguesser Cheats" />
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	 crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+	<script src="node_modules/xterm/lib/xterm.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/disable.js"></script>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<script type="text/javascript">
+	function play()
+{
+}
+</script>
+<style>
+	.enter {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		border: 0px solid black;
+		font-size: 20px;
+		color: white;
+		font-weight: 200;
+		font-family: "Roboto", sans-serif;
+		overflow: hidden;
+		background-color: #171b1f;
+		transition: 0.3s;
+		text-align: center;
+
+	}
+	.enter:hover {
+		background-color: #757575;
+	}
+	body {
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+         user-select: none; 
+color: white;
+overflow:auto;
+background-color: #171b1f;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+
+margin-top: 15vh;
+
+}
+    .zoom {
+      transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+    }
+    
+    .zoom:hover {
+      transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.curved-zoom {
+		transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+	  margin: 10px; 
+	  border-radius: 15px; 
+	}
+	.curved-zoom:hover {
+      transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.icon-zoom {
+		transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+	  margin: 10px; 
+	}
+	.icon-zoom:hover {
+      transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.curved-icon {
+	margin: 10px; border-radius: 15px; pointer-events: none;
+	}
+
+	.icon {
+	margin: 10px; pointer-events: none;
+	}
+	#myInput {
+		color: white;
+	}
+	#myTable {
+	border-collapse: collapse; /* Collapse borders */
+	width: 100%; /* Full-width */
+	border: 1px solid #ddd; /* Add a grey border */
+	font-size: 18px; /* Increase font-size */
+	}
+
+	#myTable th, #myTable td {
+	text-align: left; /* Left-align text */
+	padding: 12px; /* Add padding */
+	}
+
+	#myTable tr {
+	/* Add a bottom border to all table rows */
+	border-bottom: 1px solid #ddd;
+	}
+
+	#myTable tr.header, #myTable tr:hover {
+	/* Add a grey background color to the table header and on hover */
+	background-color: #363f47;
+	}
+    </style>
+</head>
+<div class="topnav">
+	<a href="../">Cheats</a>
+</div>
+<script>
+	function artFunction() {
+  // Declare starting variables
+  var input = document.getElementById("myInput");
+  var filter = input.value.toUpperCase();
+  var table = document.getElementById("myTable");
+  var trs = table.tBodies[0].getElementsByTagName("tr");
+  x=0
+  var noresults = document.getElementById('noresults');
+  noresults.style.display="none"
+  // Loop through rows
+  for (var i = 0; i < trs.length; i++) {
+    // Define the cells
+    var tds = trs[i].getElementsByTagName("td");
+    // hide the row
+    trs[i].style.display = "none";
+    // loop through row cells
+    for (var i2 = 0; i2 < tds.length; i2++) {
+      // if there's a match
+      if (tds[i2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        // show the row
+		x++
+        trs[i].style.display = "";
+        // skip to the next row
+        continue;
+      }
+	  if (x===0) {
+		noresults.style.display="";
+	  }
+    }
+  }
+}
+</script>
+<body onload="play()">
+	<div id="soundtrack"></div>
+	<div class="container mt-3 text-center" style="padding-bottom:40px;	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+		<h1 class="lo" , style="font-weight:400;padding-top:40px"class="featurette-heading">Domain Suffixes</h1>
+		<br>
+		<input type="text" id="myInput" class="table-filter" onkeyup="artFunction()" placeholder="Search for domain suffixes..">
+		<br>
+		<br>
+		<table class="two-column" id="myTable">
+			<thead><tr><th>Domain</th><th>Country / Territory</th></tr></thead><tbody>
+			<tr ><td id="sub">.ac</td><td class="d_state">Ascension Island <span>(UK)</span></td></tr>
+			<tr><td id="sub">.ad</td><td>Andorra</td></tr>
+			<tr ><td id="sub">.ae</td><td>United Arab Emirates</td></tr>
+			<tr><td id="sub">.af</td><td>Afghanistan</td></tr>
+			<tr ><td id="sub">.ag</td><td>Antigua and Barbuda</td></tr>
+			<tr><td id="sub">.ai</td><td class="d_state">Anguilla <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.al</td><td>Albania</td></tr>
+			<tr><td id="sub">.am</td><td>Armenia</td></tr>
+			<tr ><td id="sub">.ao</td><td>Angola</td></tr>
+			<tr><td id="sub">.ar</td><td>Argentina</td></tr>
+			<tr ><td id="sub">.as</td><td class="d_state">American Samoa <span>(USA)</span></td></tr>
+			<tr><td id="sub">.at</td><td>Austria</td></tr>
+			<tr ><td id="sub">.au</td><td>Australia</td></tr>
+			<tr><td id="sub">.aw</td><td class="d_state">Aruba <span>(Netherlands)</span></td></tr>
+			<tr ><td id="sub">.ax</td><td class="d_state">Aland Islands <span>(Finland)</span></td></tr>
+			<tr><td id="sub">.az</td><td>Azerbaijan</td></tr>
+			<tr ><td id="sub">.ba</td><td>Bosnia and Herzegovina</td></tr>
+			<tr><td id="sub">.bb</td><td>Barbados</td></tr>
+			<tr ><td id="sub">.bd</td><td>Bangladesh</td></tr>
+			<tr><td id="sub">.be</td><td>Belgium</td></tr>
+			<tr ><td id="sub">.bf</td><td>Burkina Faso</td></tr>
+			<tr><td id="sub">.bg</td><td>Bulgaria</td></tr>
+			<tr ><td id="sub">.bh</td><td>Bahrain</td></tr>
+			<tr><td id="sub">.bi</td><td>Burundi</td></tr>
+			<tr ><td id="sub">.bj</td><td>Benin</td></tr>
+			<tr><td id="sub">.bm</td><td class="d_state">Bermuda <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.bn</td><td>Brunei</td></tr>
+			<tr><td id="sub">.bo</td><td>Bolivia</td></tr>
+			<tr ><td id="sub">.br</td><td>Brazil</td></tr>
+			<tr><td id="sub">.bs</td><td>Bahamas</td></tr>
+			<tr ><td id="sub">.bt</td><td>Bhutan</td></tr>
+			<tr><td id="sub">.bv</td><td class="d_state">Bouvet Island <span>(Norway)</span></td></tr>
+			<tr ><td id="sub">.bw</td><td>Botswana</td></tr>
+			<tr><td id="sub">.by</td><td>Belarus</td></tr>
+			<tr ><td id="sub">.bz</td><td>Belize</td></tr>
+			<tr ><td id="sub">.ca</td><td>Canada</td></tr>
+			<tr><td id="sub">.cc</td><td class="d_state">Cocos (Keeling) Islands <span>(Australia)</span></td></tr>
+			<tr ><td id="sub">.cd</td><td>Democratic Republic of the Congo</td></tr>
+			<tr><td id="sub">.cf</td><td>Central African Republic</td></tr>
+			<tr ><td id="sub">.cg</td><td>Republic of the Congo</td></tr>
+			<tr><td id="sub">.ch</td><td>Switzerland</td></tr>
+			<tr ><td id="sub">.ci</td><td>Cote d'Ivoire</td></tr>
+			<tr><td id="sub">.ck</td><td class="d_state">Cook Islands <span>(New Zealand)</span></td></tr>
+			<tr ><td id="sub">.cl</td><td>Chile</td></tr>
+			<tr><td id="sub">.cm</td><td>Cameroon</td></tr>
+			<tr ><td id="sub">.cn</td><td>China</td></tr>
+			<tr><td id="sub">.co</td><td>Colombia</td></tr>
+			<tr ><td id="sub">.cr</td><td>Costa Rica</td></tr>
+			<tr><td id="sub">.cu</td><td>Cuba</td></tr>
+			<tr ><td id="sub">.cv</td><td>Cabo Verde</td></tr>
+			<tr><td id="sub">.cw</td><td class="d_state">Curacao <span>(Netherlands)</span></td></tr>
+			<tr ><td id="sub">.cx</td><td class="d_state">Christmas Island <span>(Australia)</span></td></tr>
+			<tr><td id="sub">.cy</td><td>Cyprus</td></tr>
+			<tr ><td id="sub">.cz</td><td>Czechia</td></tr>
+			<tr ><td id="sub">.de</td><td>Germany</td></tr>
+			<tr><td id="sub">.dj</td><td>Djibouti</td></tr>
+			<tr ><td id="sub">.dk</td><td>Denmark</td></tr>
+			<tr><td id="sub">.dm</td><td>Dominica</td></tr>
+			<tr ><td id="sub">.do</td><td>Dominican Republic</td></tr>
+			<tr><td id="sub">.dz</td><td>Algeria</td></tr>
+			<tr ><td id="sub">.ec</td><td>Ecuador</td></tr>
+			<tr><td id="sub">.ee</td><td>Estonia</td></tr>
+			<tr ><td id="sub">.eg</td><td>Egypt</td></tr>
+			<tr><td id="sub">.er</td><td>Eritrea</td></tr>
+			<tr ><td id="sub">.es</td><td>Spain</td></tr>
+			<tr><td id="sub">.et</td><td>Ethiopia</td></tr>
+			<tr ><td id="sub">.eu</td><td class="d_state">European Union <br><span>(politico-economic union of 28 states)</span></td></tr>
+			<tr ><td id="sub">.fi</td><td>Finland</td></tr>
+			<tr><td id="sub">.fj</td><td>Fiji</td></tr>
+			<tr ><td id="sub">.fk</td><td class="d_state">Falkland Islands <span>(UK)</span></td></tr>
+			<tr><td id="sub">.fm</td><td>Federated States of Micronesia</td></tr>
+			<tr ><td id="sub">.fo</td><td class="d_state">Faroe Islands <span>(Denmark)</span></td></tr>
+			<tr><td id="sub">.fr</td><td>France</td></tr>
+			<tr ><td id="sub">.ga</td><td>Gabon</td></tr>
+			<tr><td id="sub">.gb</td><td>United Kingdom</td></tr>
+			<tr ><td id="sub">.gd</td><td>Grenada</td></tr>
+			<tr><td id="sub">.ge</td><td>Georgia</td></tr>
+			<tr ><td id="sub">.gf</td><td class="d_state">French Guiana <span>(France)</span></td></tr>
+			<tr><td id="sub">.gg</td><td class="d_state">Guernsey <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.gh</td><td>Ghana</td></tr>
+			<tr><td id="sub">.gi</td><td class="d_state">Gibraltar <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.gl</td><td class="d_state">Greenland <span>(Denmark)</span></td></tr>
+			<tr><td id="sub">.gm</td><td>Gambia</td></tr>
+			<tr ><td id="sub">.gn</td><td>Guinea</td></tr>
+			<tr><td id="sub">.gp</td><td class="d_state">Guadeloupe <span>(France)</span></td></tr>
+			<tr ><td id="sub">.gq</td><td>Equatorial Guinea</td></tr>
+			<tr><td id="sub">.gr</td><td>Greece</td></tr>
+			<tr ><td id="sub">.gs</td><td class="d_state">South Georgia and the South Sandwich Islands <span>(UK)</span></td></tr>
+			<tr><td id="sub">.gt</td><td>Guatemala</td></tr>
+			<tr ><td id="sub">.gu</td><td class="d_state">Guam <span>(USA)</span></td></tr>
+			<tr><td id="sub">.gw</td><td>Guinea-Bissau</td></tr>
+			<tr ><td id="sub">.gy</td><td>Guyana</td></tr>
+			<tr ><td id="sub">.hk</td><td class="d_state">Hong Kong <span>(China)</span></td></tr>
+			<tr><td id="sub">.hm</td><td class="d_state">Heard Island and McDonald Islands <span>(Australia)</span></td></tr>
+			<tr ><td id="sub">.hn</td><td>Honduras</td></tr>
+			<tr><td id="sub">.hr</td><td>Croatia</td></tr>
+			<tr ><td id="sub">.ht</td><td>Haiti</td></tr>
+			<tr><td id="sub">.hu</td><td>Hungary</td></tr>
+			<tr ><td id="sub">.id</td><td>Indonesia</td></tr>
+			<tr><td id="sub">.ie</td><td>Ireland</td></tr>
+			<tr ><td id="sub">.il</td><td>Israel</td></tr>
+			<tr><td id="sub">.im</td><td class="d_state">Isle of Man <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.in</td><td>India</td></tr>
+			<tr><td id="sub">.io</td><td class="d_state">British Indian Ocean Territory <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.iq</td><td>Iraq</td></tr>
+			<tr><td id="sub">.ir</td><td>Iran</td></tr>
+			<tr ><td id="sub">.is</td><td>Iceland</td></tr>
+			<tr><td id="sub">.it</td><td>Italy</td></tr>
+			<tr ><td id="sub">.je</td><td class="d_state">Jersey <span>(UK)</span></td></tr>
+			<tr><td id="sub">.jm</td><td>Jamaica</td></tr>
+			<tr ><td id="sub">.jo</td><td>Jordan</td></tr>
+			<tr><td id="sub">.jp</td><td>Japan</td></tr>
+			<tr ><td id="sub">.ke</td><td>Kenya</td></tr>
+			<tr><td id="sub">.kg</td><td>Kyrgyzstan</td></tr>
+			<tr ><td id="sub">.kh</td><td>Cambodia</td></tr>
+			<tr><td id="sub">.ki</td><td>Kiribati</td></tr>
+			<tr ><td id="sub">.km</td><td>Comoros</td></tr>
+			<tr><td id="sub">.kn</td><td>Saint Kitts and Nevis</td></tr>
+			<tr ><td id="sub">.kp</td><td>North Korea</td></tr>
+			<tr><td id="sub">.kr</td><td>South Korea</td></tr>
+			<tr ><td id="sub">.kw</td><td>Kuwait</td></tr>
+			<tr><td id="sub">.ky</td><td class="d_state">Cayman Islands <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.kz</td><td>Kazakhstan</td></tr>
+			<tr ><td id="sub">.la</td><td>Laos</td></tr>
+			<tr><td id="sub">.lb</td><td>Lebanon</td></tr>
+			<tr ><td id="sub">.lc</td><td>Saint Lucia</td></tr>
+			<tr><td id="sub">.li</td><td>Liechtenstein</td></tr>
+			<tr ><td id="sub">.lk</td><td>Sri Lanka</td></tr>
+			<tr><td id="sub">.lr</td><td>Liberia</td></tr>
+			<tr ><td id="sub">.ls</td><td>Lesotho</td></tr>
+			<tr><td id="sub">.lt</td><td>Lithuania</td></tr>
+			<tr ><td id="sub">.lu</td><td>Luxembourg</td></tr>
+			<tr><td id="sub">.lv</td><td>Latvia</td></tr>
+			<tr ><td id="sub">.ly</td><td>Libya</td></tr>
+			<tr ><td id="sub">.ma</td><td>Morocco</td></tr>
+			<tr><td id="sub">.mc</td><td>Monaco</td></tr>
+			<tr ><td id="sub">.md</td><td>Moldova</td></tr>
+			<tr><td id="sub">.me</td><td>Montenegro</td></tr>
+			<tr ><td id="sub">.mg</td><td>Madagascar</td></tr>
+			<tr><td id="sub">.mh</td><td>Marshall Islands</td></tr>
+			<tr ><td id="sub">.mk</td><td>North Macedonia (formerly Macedonia)</td></tr>
+			<tr><td id="sub">.ml</td><td>Mali</td></tr>
+			<tr ><td id="sub">.mm</td><td>Myanmar (formerly Burma)</td></tr>
+			<tr><td id="sub">.mn</td><td>Mongolia</td></tr>
+			<tr ><td id="sub">.mo</td><td class="d_state">Macau <span>(China)</span></td></tr>
+			<tr><td id="sub">.mp</td><td class="d_state">Northern Mariana Islands <span>(USA)</span></td></tr>
+			<tr ><td id="sub">.mq</td><td class="d_state">Martinique <span>(France)</span></td></tr>
+			<tr><td id="sub">.mr</td><td>Mauritania</td></tr>
+			<tr ><td id="sub">.ms</td><td class="d_state">Montserrat <span>(UK)</span></td></tr>
+			<tr><td id="sub">.mt</td><td>Malta</td></tr>
+			<tr ><td id="sub">.mu</td><td>Mauritius</td></tr>
+			<tr><td id="sub">.mv</td><td>Maldives</td></tr>
+			<tr ><td id="sub">.mw</td><td>Malawi</td></tr>
+			<tr><td id="sub">.mx</td><td>Mexico</td></tr>
+			<tr ><td id="sub">.my</td><td>Malaysia</td></tr>
+			<tr><td id="sub">.mz</td><td>Mozambique</td></tr>
+			<tr ><td id="sub">.na</td><td>Namibia</td></tr>
+			<tr><td id="sub">.nc</td><td class="d_state">New Caledonia <span>(France)</span></td></tr>
+			<tr ><td id="sub">.ne</td><td>Niger</td></tr>
+			<tr><td id="sub">.nf</td><td class="d_state">Norfolk Island <span>(Australia)</span></td></tr>
+			<tr ><td id="sub">.ng</td><td>Nigeria</td></tr>
+			<tr><td id="sub">.ni</td><td>Nicaragua</td></tr>
+			<tr ><td id="sub">.nl</td><td>Netherlands</td></tr>
+			<tr><td id="sub">.no</td><td>Norway</td></tr>
+			<tr ><td id="sub">.np</td><td>Nepal</td></tr>
+			<tr><td id="sub">.nr</td><td>Nauru</td></tr>
+			<tr ><td id="sub">.nu</td><td class="d_state">Niue <span>(New Zealand)</span></td></tr>
+			<tr><td id="sub">.nz</td><td>New Zealand</td></tr>
+			<tr ><td id="sub">.om</td><td>Oman</td></tr>
+			<tr ><td id="sub">.pa</td><td>Panama</td></tr>
+			<tr><td id="sub">.pe</td><td>Peru</td></tr>
+			<tr ><td id="sub">.pf</td><td class="d_state">French Polynesia <span>(France)</span></td></tr>
+			<tr><td id="sub">.pg</td><td>Papua New Guinea</td></tr>
+			<tr ><td id="sub">.ph</td><td>Philippines</td></tr>
+			<tr><td id="sub">.pk</td><td>Pakistan</td></tr>
+			<tr ><td id="sub">.pl</td><td>Poland</td></tr>
+			<tr><td id="sub">.pm</td><td class="d_state">Saint Pierre and Miquelon <span>(France)</span></td></tr>
+			<tr ><td id="sub">.pn</td><td class="d_state">Pitcairn Islands <span>(UK)</span></td></tr>
+			<tr><td id="sub">.pr</td><td class="d_state">Puerto Rico <span>(USA)</span></td></tr>
+			<tr ><td id="sub">.ps</td><td>Palestine</td></tr>
+			<tr><td id="sub">.pt</td><td>Portugal</td></tr>
+			<tr ><td id="sub">.pw</td><td>Palau</td></tr>
+			<tr><td id="sub">.py</td><td>Paraguay</td></tr>
+			<tr ><td id="sub">.qa</td><td>Qatar</td></tr>
+			<tr ><td id="sub">.re</td><td class="d_state">Reunion <span>(France)</span></td></tr>
+			<tr><td id="sub">.ro</td><td>Romania</td></tr>
+			<tr ><td id="sub">.rs</td><td>Serbia</td></tr>
+			<tr><td id="sub">.ru</td><td>Russia</td></tr>
+			<tr ><td id="sub">.rw</td><td>Rwanda</td></tr>
+			<tr ><td id="sub">.sa</td><td>Saudi Arabia</td></tr>
+			<tr><td id="sub">.sb</td><td>Solomon Islands</td></tr>
+			<tr ><td id="sub">.sc</td><td>Seychelles</td></tr>
+			<tr><td id="sub">.sd</td><td>Sudan</td></tr>
+			<tr ><td id="sub">.se</td><td>Sweden</td></tr>
+			<tr><td id="sub">.sg</td><td>Singapore</td></tr>
+			<tr ><td id="sub">.sh</td><td class="d_state">Saint Helena <span>(UK)</span></td></tr>
+			<tr><td id="sub">.si</td><td>Slovenia</td></tr>
+			<tr ><td id="sub">.sj</td><td class="d_state">Svalbard and Jan Mayen <span>(Norway)</span></td></tr>
+			<tr><td id="sub">.sk</td><td>Slovakia</td></tr>
+			<tr ><td id="sub">.sl</td><td>Sierra Leone</td></tr>
+			<tr><td id="sub">.sm</td><td>San Marino</td></tr>
+			<tr ><td id="sub">.sn</td><td>Senegal</td></tr>
+			<tr><td id="sub">.so</td><td>Somalia</td></tr>
+			<tr ><td id="sub">.sr</td><td>Suriname</td></tr>
+			<tr><td id="sub">.st</td><td>Sao Tome and Principe</td></tr>
+			<tr ><td id="sub">.su</td><td class="d_state">Soviet Union (former), <br><span>top-level domain is still in use</span></td></tr>
+			<tr><td id="sub">.sv</td><td>El Salvador</td></tr>
+			<tr ><td id="sub">.sx</td><td class="d_state">Sint Maarten <span>(Netherlands)</span></td></tr>
+			<tr><td id="sub">.sy</td><td>Syria</td></tr>
+			<tr ><td id="sub">.sz</td><td>Eswatini (formerly Swaziland)</td></tr>
+			<tr ><td id="sub">.tc</td><td class="d_state">Turks and Caicos Islands <span>(UK)</span></td></tr>
+			<tr><td id="sub">.td</td><td>Chad<br></td></tr>
+			<tr ><td id="sub">.tf</td><td class="d_state">French Southern Territories <span>(France)</span></td></tr>
+			<tr><td id="sub">.tg</td><td>Togo</td></tr>
+			<tr ><td id="sub">.th</td><td>Thailand</td></tr>
+			<tr><td id="sub">.tj</td><td>Tajikistan</td></tr>
+			<tr ><td id="sub">.tk</td><td class="d_state">Tokelau <span>(New Zealand)</span></td></tr>
+			<tr><td id="sub">.tl</td><td>Timor-Leste</td></tr>
+			<tr ><td id="sub">.tm</td><td>Turkmenistan</td></tr>
+			<tr><td id="sub">.tn</td><td>Tunisia</td></tr>
+			<tr ><td id="sub">.to</td><td>Tonga</td></tr>
+			<tr><td id="sub">.tr</td><td>Turkey</td></tr>
+			<tr ><td id="sub">.tt</td><td>Trinidad and Tobago</td></tr>
+			<tr><td id="sub">.tv</td><td>Tuvalu</td></tr>
+			<tr ><td id="sub">.tw</td><td>Taiwan</td></tr>
+			<tr><td id="sub">.tz</td><td>Tanzania</td></tr>
+			<tr ><td id="sub">.ua</td><td>Ukraine</td></tr>
+			<tr><td id="sub">.ug</td><td>Uganda</td></tr>
+			<tr ><td id="sub">.uk</td><td>United Kingdom</td></tr>
+			<tr ><td id="sub">.us</td><td>United States of America</td></tr>
+			<tr><td id="sub">.uy</td><td>Uruguay</td></tr>
+			<tr ><td id="sub">.uz</td><td>Uzbekistan</td></tr>
+			<tr ><td id="sub">.va</td><td>Vatican City (Holy See)</td></tr>
+			<tr><td id="sub">.vc</td><td>Saint Vincent and the Grenadines</td></tr>
+			<tr ><td id="sub">.ve</td><td>Venezuela</td></tr>
+			<tr><td id="sub">.vg</td><td class="d_state">British Virgin Islands <span>(UK)</span></td></tr>
+			<tr ><td id="sub">.vi</td><td class="d_state">US Virgin Islands <span>(USA)</span></td></tr>
+			<tr><td id="sub">.vn</td><td>Vietnam</td></tr>
+			<tr ><td id="sub">.vu</td><td>Vanuatu</td></tr>
+			<tr ><td id="sub">.wf</td><td class="d_state">Wallis and Futuna <span>(France)</span></td></tr>
+			<tr><td id="sub">.ws</td><td>Samoa</td></tr>
+			<tr ><td id="sub">.ye</td><td>Yemen</td></tr>
+			<tr><td id="sub">.yt</td><td class="d_state">Mayotte <span>(France)</span></td></tr>
+			<tr ><td id="sub">.za</td><td>South Africa</td></tr>
+			<tr><td id="sub">.zm</td><td>Zambia</td></tr>
+			<tr ><td id="sub">.zw</td><td>Zimbabwe</td></tr>
+			<tr id="noresults" style="display: none;"><td colspan="2">No Results</td></tr>
+			</tbody>
+			</table>
+	</div>
+	<h3 style="padding-bottom:5px"></h3>
+	<h3 style="text-align:center;font-size:10px">Maintained and redesigned by <a href="https://github.com/SSSEAL-C" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">SSSEAL-C</a></h3>
+</body>
+</html>

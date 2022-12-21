@@ -1,0 +1,426 @@
+<html>
+<head>
+	<title>Geoguesser Cheats</title>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5556515162447894"
+     crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/site.webmanifest">
+<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-config" content="icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Geoguesser Cheats">
+	<meta property="og:title" content="Geoguesser Cheats" />
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	 crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+	<script src="node_modules/xterm/lib/xterm.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/disable.js"></script>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<script type="text/javascript">
+	function play()
+{
+}
+</script>
+<style>
+	.enter {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		border: 0px solid black;
+		font-size: 20px;
+		color: white;
+		font-weight: 200;
+		font-family: "Roboto", sans-serif;
+		overflow: hidden;
+		background-color: #171b1f;
+		transition: 0.3s;
+		text-align: center;
+
+	}
+	.enter:hover {
+		background-color: #757575;
+	}
+	body {
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+         user-select: none; 
+color: white;
+overflow:auto;
+background-color: #171b1f;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+
+margin-top: 15vh;
+
+}
+    .zoom {
+      transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+    }
+    
+    .zoom:hover {
+      transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.curved-zoom {
+		transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+	  margin: 10px; 
+	  border-radius: 15px; 
+	}
+	.curved-zoom:hover {
+      transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.icon-zoom {
+		transition: transform .2s; /* Animation */
+      margin: 0 auto;
+      z-index:101;
+	  margin: 10px; 
+	}
+	.icon-zoom:hover {
+      transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      z-index:102;
+    }
+	.curved-icon {
+	margin: 10px; border-radius: 15px; pointer-events: none;
+	}
+
+	.icon {
+	margin: 10px; pointer-events: none;
+	}
+	#myInput {
+		color: white;
+	}
+	#myTable {
+	border-collapse: collapse; /* Collapse borders */
+	width: 100%; /* Full-width */
+	border: 1px solid #ddd; /* Add a grey border */
+	font-size: 18px; /* Increase font-size */
+	}
+
+	#myTable th, #myTable td {
+	text-align: left; /* Left-align text */
+	padding: 12px; /* Add padding */
+	}
+
+	#myTable tr {
+	/* Add a bottom border to all table rows */
+	border-bottom: 1px solid #ddd;
+	}
+
+	#myTable tr.header, #myTable tr:hover {
+	/* Add a grey background color to the table header and on hover */
+	background-color: #363f47;
+	}
+    </style>
+</head>
+<div class="topnav">
+	<a href="../">Cheats</a>
+</div>
+<script>
+	function artFunction() {
+  // Declare starting variables
+  var input = document.getElementById("myInput");
+  var filter = input.value.toUpperCase();
+  var table = document.getElementById("myTable");
+  var trs = table.tBodies[0].getElementsByTagName("tr");
+  var noresults= document.getElementById('noresults')
+  noresults.style.display="none";
+  x=0
+  // Loop through rows
+  for (var i = 0; i < trs.length; i++) {
+    // Define the cells
+    var tds = trs[i].getElementsByTagName("td");
+    // hide the row
+    trs[i].style.display = "none";
+    // loop through row cells
+    for (var i2 = 0; i2 < tds.length; i2++) {
+      // if there's a match
+      if (tds[i2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+		x++
+        // show the row
+        trs[i].style.display = "";
+        // skip to the next row
+        continue;
+      }
+	  if (x === 0) {
+		 noresults.style.display="";
+	  }}}}
+</script>
+<body>
+	<div id="soundtrack"></div>
+	<div class="container mt-3 text-center" style="padding-bottom:40px;	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+		<h1 class="lo" , style="font-weight:400;padding-top:40px"class="featurette-heading">Domain Suffixes</h1>
+		<br>
+		<input type="text" id="myInput" class="table-filter" onkeyup="artFunction()" placeholder="Search for domain suffixes..">
+		<br>
+		<br>
+		<table id="myTable" class="two-column">
+			<thead><tr><th>Country / Territory</th><th>What side of the road do they drive on?</th></tr></thead><tbody>
+				<tr><td class="cname">Afghanistan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Albania</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Algeria</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">American Samoa</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Andorra</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Angola</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Anguilla</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Antigua and Barbuda</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Argentina</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Armenia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Aruba</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Australia</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Austria</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Azerbaijan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Bahamas, The</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Bahrain</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Bangladesh</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Barbados</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Belarus</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Belgium</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Belize</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Benin</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Bermuda</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Bhutan</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Bolivia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Bosnia and Herzegovina</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Botswana</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Brazil</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">British Indian Ocean Territory</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Brunei</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Bulgaria</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Burkina Faso</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Burundi</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Cambodia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Cameroon</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Canada</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Cape Verde</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Cayman Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Central African Republic</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Chad</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Chile</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">China</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Christmas Island</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Cocos (Keeling) Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Colombia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Comoros</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Congo, Republic of the</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Congo, Democratic Republic of the</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Cook Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Costa Rica</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Côte d'Ivoire</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Croatia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Cuba</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Cyprus</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Czech Republic</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Denmark</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Djibouti</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Dominica</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Dominican Republic</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Ecuador</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Egypt</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">El Salvador</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Equatorial Guinea</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Eritrea</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Estonia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Ethiopia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Falkland Islands (Islas Malvinas)</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Faroe Islands</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Fiji</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Finland</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">France</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">French Guiana</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">French Polynesia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Gabon</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Gambia, The</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Georgia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Germany</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Ghana</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Gibraltar</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Greece</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Greenland</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Grenada</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Guadeloupe</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Guam</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Guatemala</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Guernsey</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Guinea</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Guinea-Bissau</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Guyana</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Haiti</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Holy See (Vatican City)</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Honduras</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Hong Kong</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Hungary</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Iceland</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">India</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Indonesia</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Iran</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Iraq</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Ireland</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Isle of Man</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Israel</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Italy</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Jamaica</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Japan</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Jersey</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Jordan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Kazakhstan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Kenya</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Kiribati</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Korea, North</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Korea, South</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Kuwait</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Kyrgyzstan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Laos</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Latvia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Lebanon</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Lesotho</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Liberia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Libya</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Liechtenstein</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Lithuania</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Luxembourg</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Macau</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Macedonia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Madagascar</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Malawi</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Malaysia</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Maldives</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Mali</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Malta</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Marshall Islands</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Martinique</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Mauritania</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Mauritius</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Mayotte</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Mexico</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Micronesia, Federated States of</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Moldova</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Monaco</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Mongolia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Montenegro</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Montserrat</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Morocco</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Mozambique</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Burma</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Namibia</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Nauru</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Nepal</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Netherlands</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Netherlands Antilles</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">New Caledonia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">New Zealand</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Nicaragua</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Niger</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Nigeria</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Niue</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Norfolk Island</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Northern Mariana Islands</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Norway</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Oman</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Pakistan</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Palau</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">West Bank</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Panama</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Papua New Guinea</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Paraguay</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Peru</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Philippines</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Pitcairn Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Poland</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Portugal</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Puerto Rico</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Qatar</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Réunion</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Romania</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Russia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Rwanda</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Saint Barthélemy</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Saint Helena</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Saint Kitts and Nevis</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Saint Lucia</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Saint Martin</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Saint Pierre and Miquelon</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Saint Vincent and the Grenadines</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Samoa</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">San Marino</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Sao Tome and Principe</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Saudi Arabia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Senegal</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Serbia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Seychelles</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Sierra Leone</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Singapore</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Slovakia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Slovenia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Solomon Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Somalia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">South Africa</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Spain</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Sri Lanka</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Sudan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Suriname</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Svalbard</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Swaziland</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Sweden</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Switzerland</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Syria</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Taiwan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Tajikistan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Tanzania</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Thailand</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Timor-Leste</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Togo</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Tokelau</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Tonga</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Trinidad and Tobago</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Tunisia</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Turkey</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Turkmenistan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Turks and Caicos Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Tuvalu</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Uganda</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Ukraine</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">United Arab Emirates</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">United Kingdom</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">United States</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Uruguay</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Uzbekistan</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Vanuatu</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Venezuela</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Vietnam</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">British Virgin Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Virgin Islands</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Wallis and Futuna</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Western Sahara</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Yemen</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr><td class="cname">Zambia</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Zimbabwe</td><td class="tvalue tstring tunit">left side</td></tr>
+				<tr><td class="cname">Midway Islands</td><td class="tvalue tstring tunit">right side</td></tr>
+				<tr id="noresults" style="display: none;"><td colspan="2">No Results</td></tr>
+			</tbody>
+			</table>
+	</div>
+	<h3 style="padding-bottom:5px"></h3>
+	<h3 style="text-align:center;font-size:10px">Maintained and redesigned by <a href="https://github.com/SSSEAL-C" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">SSSEAL-C</a></h3>
+</body>
+</html>
