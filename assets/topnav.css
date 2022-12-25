@@ -1,0 +1,36 @@
+.topnav {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+    display: flex;
+
+    transition: 1s;
+    position: absolute;
+    z-index: 0;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 42, 86, 0.0);
+    overflow:auto;
+    align-content: center;
+    float: center;
+
+}
+
+.topnav a {
+    transition: 1s;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    transition: 0.2s;
+    opacity: 0.6;
+    color: #FE5000;
+}
+
+.topnav a.active {
+    color: grey;
+}
